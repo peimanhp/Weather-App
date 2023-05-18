@@ -5,13 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peiman's Weather App</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
-    <label for="location">City Name:</label>
-    <input id="location" type="text" required>
-
-    <button id="submit">Go</button>
-
+<body>    
+    <header><h1>Weather App</h1></header>
+    <div class="wrapper">
+        <form action="" method="post">            
+            <input type="text" id="location" name="location" placeholder="Enter City Name" required>
+            <input id="submit" type="submit" value="Go">
+        </form>
+        <div class="forecast">
+            <h2 id="city">tehran</h2>
+            <h3 id="temp">22</h3>
+            <p id="feels">23</p>
+            <p id="humidity">50%</p>
+            <p id="wind">110</p>
+        </div>
+    </div>
     <script src="./main.js"></script>
 </body>
 </html>
