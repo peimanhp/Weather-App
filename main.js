@@ -34,7 +34,7 @@ function showResult(city, temp, feels, humidity, wind) {
   forecastBox.classList.add("show");
   cityResult.innerText = city;
   tempResult.innerText = `${temp} °C`;
-  feelsResult.innerText = `${feels} °C`;
-  humidityResult.innerText = `${humidity} %`;
-  windResult.innerText = `${wind} km/h`;
+  feelsResult.innerText = `Feels Like: ${feels} °C`;
+  humidityResult.innerText = `Humidity: ${humidity} %`;
+  windResult.innerText = `Wind Speed: ${wind} km/h`;
 }
